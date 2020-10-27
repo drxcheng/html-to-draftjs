@@ -37,7 +37,7 @@ def test_convert_inline():
     """Tests converting ** HTML structure, where inline tags are not
     in a block tag."""
     html = (
-        "My content has <strong>some <em>content</em></strong>"
+        "My <u>content</u> has <strong>some <em>content</em></strong>"
         "<p>A paragraph here</p>"
     )
     json = html_to_draftjs(html)
@@ -50,6 +50,7 @@ def test_convert_inline():
                 "type": "unstyled",
                 "depth": 0,
                 "inlineStyleRanges": [
+                    {"offset": 3, "length": 7, "style": "UNDERLINE"},
                     {"offset": 15, "length": 12, "style": "BOLD"},
                     {"offset": 20, "length": 7, "style": "ITALIC"},
                 ],

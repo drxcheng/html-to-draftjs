@@ -73,6 +73,7 @@ Converts a given beautiful soup into JSON. Useful if you have to select a given 
 ### Inline Styling
 - `<strong>`, `<b>`
 - `<em>`, `<i>`
+- `<u>`
 
 ### Entities
 - `<img src="url" [alt="alt"] [height="123"] [width="123"]>`
