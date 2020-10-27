@@ -10,7 +10,7 @@ v1.0.1 - July 31st 2019
 - Fix crash when the passed HTML is empty.
 
 
-unversioned - October 27th 2020
+v1.0.2 - October 27th 2020
 +++++++++++++++++++++++
 
 - Add support for underline.
